@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivities.VerificationActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/backArrrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_backarrow"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Account Verification"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_toRightOf="@id/backArrrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topLayout"
+        android:orientation="vertical">
+
+        <!-- Full name -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                android:text="Full name"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtUserFulName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="- -"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+        <!-- Country -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                android:text="Country"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtUserCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="- -"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+
+         <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            android:text="Select Gender">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textStyle="normal"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textStyle="normal"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18sp"/>
+
+
+
+            </RadioGroup>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <!-- Id number -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/edtUserIdNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/curved_edittext_border"
+                android:inputType="number"
+                android:hint="Enter National ID number"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:ems="10"
+                android:maxLength="8"
+                android:maxLines="1">
+
+            </EditText>
+
+
+
+        </RelativeLayout>
+
+        <!-- Date of birth-->
+        <RelativeLayout
+            android:id="@+id/edtUserDoB"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/curved_edittext_border">
+
+            <TextView
+                android:id="@+id/txtUserDoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:ems="10"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+        <!-- Id number -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edtUserPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/curved_edittext_border"
+                android:inputType="phone"
+                android:hint="Enter Your Phone Number"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:ems="10"
+                android:maxLength="10"
+                android:maxLines="1">
+
+            </EditText>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Select County of Residence"
+            android:textColor="@color/teal_700">
+
+        </TextView>
+
+        <!-- Id number -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/curved_edittext_border">
+
+            <TextView
+                android:id="@+id/txtUserCounty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:ems="10"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                >
+
+            </Spinner>
+
+
+
+        </RelativeLayout>
+
+
+        <!-- Submit-->
+        <RelativeLayout
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/curved_button_border"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="SUBMIT"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

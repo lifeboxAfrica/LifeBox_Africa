@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivities.RequestBlood"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/backArrrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_backarrow"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Request Blood"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_toRightOf="@id/backArrrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                android:text="Full name"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtUserFulName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="- -"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <!-- Location -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                android:text="Location"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtUserCounty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="- -"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <!-- Blood group -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                android:text="Blood Group"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtUserBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="- -"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <!-- Submit-->
+        <RelativeLayout
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/curved_button_border"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SUBMIT REQUEST"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

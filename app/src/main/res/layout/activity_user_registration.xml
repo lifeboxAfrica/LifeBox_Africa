@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivities.UserRegistrationActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Top part for tittle -->
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:background="@color/red"
+            android:paddingTop="50dp"
+            android:paddingBottom="70dp">
+
+            <TextView
+                android:id="@+id/txtGetRegistered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_getRegistered"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_signup_description"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_below="@id/txtGetRegistered"
+                android:gravity="center_horizontal"
+                android:textAlignment="center">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <!-- Bottom layout for user input -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topLayout"
+            android:background="@drawable/white_top_curved_bg"
+            android:layout_marginTop="-40dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!-- First Name-->
+                <EditText
+                    android:id="@+id/etUserFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/curved_edittext_border"
+                    android:drawableStart="@drawable/ic_person_red"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Last name -->
+                <EditText
+                    android:id="@+id/etUserLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/curved_edittext_border"
+                    android:drawableStart="@drawable/ic_person_red"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etUserFirstName" />
+
+                <!-- Email-->
+                <EditText
+                    android:id="@+id/etUserEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/curved_edittext_border"
+                    android:drawableStart="@drawable/ic_email_red"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etUserLastName" />
+
+                <!--Password-->
+                <EditText
+                    android:id="@+id/etUserPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/curved_edittext_border"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:maxLength="18"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etUserEmail" />
+
+                <!--Confirm Password-->
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/curved_edittext_border"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:maxLength="18"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etUserPassword" />
+
+                <!-- Terms and Conditions -->
+                <RelativeLayout
+                    android:id="@+id/termsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etConfirmPassword"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/termsCheckBox"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+                    </CheckBox>
+
+                    <TextView
+                        android:id="@+id/txtTermsDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/termsCheckBox"
+                        android:text="By signing up you agree to our "
+                        android:textColor="@color/teal_700"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtTerms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/txtTermsDescription"
+                        android:text="@string/terms_and_conditions"
+                        android:textColor="@color/purple_200"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+                <!--Signup button -->
+
+
+                <!-- Log in text -->
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/curved_button_border"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/txtSignIn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/termsLayout"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/txtSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:textAlignment="center"
+                    android:text="@string/txt_signin"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:padding="8dp"
+                    android:layout_marginBottom="20dp">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

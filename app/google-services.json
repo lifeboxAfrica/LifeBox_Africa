@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824750583331",
+    "project_id": "life-box-e2d90",
+    "storage_bucket": "life-box-e2d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824750583331:android:af688efd3bd1c4d0e20b96",
+        "android_client_info": {
+          "package_name": "com.android.lifebox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824750583331-56jodq0j82d6av3pj4f6ich64r9qmdla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIagK_kDezEeE8zgP0PTGFLgwO9_WNMcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824750583331-56jodq0j82d6av3pj4f6ich64r9qmdla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivities.UserMedicalHistory"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/backArrrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_backarrow"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Medical History"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_toRightOf="@id/backArrrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bloodGroupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/topLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your blood group:"
+            android:textColor="@color/teal_700"
+            android:textSize="19sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AB"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hintBloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:visibility="gone">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtUserBloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- -"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/hintBloodGroup"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:visibility="gone">
+    </TextView>
+
+
+
+</RelativeLayout>

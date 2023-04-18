@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserFragments.UserLoginFragment"
+    android:background="@color/white">
+
+    <!-- Email-->
+    <EditText
+        android:id="@+id/edtUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_edittext_border"
+        android:drawableStart="@drawable/ic_email_red"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:layout_marginTop="70dp"/>
+
+    <!-- Password-->
+    <EditText
+        android:id="@+id/edtUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/curved_edittext_border"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:layout_below="@id/edtUserEmail"/>
+
+    <!-- Forgot password-->
+    <RelativeLayout
+        android:id="@+id/lytForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@id/edtUserPassword"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        >
+
+        <!-- Forgot password -->
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/purple_200"
+            android:textSize="16sp"
+            android:text="Forgot Password?">
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/curved_button_border"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/lytForgotPassword"/>
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:textAlignment="center"
+        android:text="@string/txt_signup"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp">
+
+    </TextView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
